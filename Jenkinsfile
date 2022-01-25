@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sudo docker build -t hello-word-java-apache-tomcat .'
-                sh 'sudo docker run -d -p 82:80 hello-word-java-apache-tomcat '
+                sh 'docker build -t hello-word-java-apache-tomcat .'
+                sh 'docker run -d -p 82:80 hello-word-java-apache-tomcat '
             }
         }
         stage('Test Integration') {
