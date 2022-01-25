@@ -20,8 +20,8 @@ pipeline {
         }
         stage('Test Integration') {
             steps {
-                sh 'wget -m localhost:82/app-web-demo'
-                sh "grep -i Javier /usr/local/tomcat/webapps/index.jsp"
+                sh 'wget -m localhost:82/app-web-alumno'
+                
             }
         }
     }
