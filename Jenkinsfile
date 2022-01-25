@@ -21,7 +21,7 @@ pipeline {
         stage('Test Integration') {
             steps {
                 echo 'wget -m localhost:82/app-web-demo'
-                echo "grep -i Javier /home/javier/Documentos/GitHub/hello-world-java-apache-tomcat/src/main/webapp/index.jsp"
+                echo "grep -i Javier /usr/local/tomcat/webapps/index.jsp"
             }
         }
     }
