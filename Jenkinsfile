@@ -21,7 +21,8 @@ pipeline {
         }
         stage('Test Integration') {
             steps {
-                sh 'wget -m localhost:82/app-web-demo | grep -i Javier'           
+                sh 'wget -m localhost:82/app-web-demo'       
+                sh 'grep i Javier localhost:82/app-web-demo'    
             }
         }
     }
